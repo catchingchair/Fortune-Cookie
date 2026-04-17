@@ -71,3 +71,4 @@
 /Users/trentf/Spring 2026/CS230 OOP/Avalonia/Fortune_Cookie/Fortune Cookie/obj/Debug/net10.0/Fortune Cookie.pdb
 /Users/trentf/Spring 2026/CS230 OOP/Avalonia/Fortune_Cookie/Fortune Cookie/obj/Debug/net10.0/Fortune Cookie.genruntimeconfig.cache
 /Users/trentf/Spring 2026/CS230 OOP/Avalonia/Fortune_Cookie/Fortune Cookie/obj/Debug/net10.0/ref/Fortune Cookie.dll
+/Users/trentf/Spring 2026/CS230 OOP/Avalonia/Fortune_Cookie/Fortune Cookie/obj/Debug/net10.0/Fortune Cookie.sourcelink.json
