@@ -8,6 +8,7 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
+        Fortunes.ResetFortuneList();
     }
 
     public void FortuneGet_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
