@@ -8,13 +8,17 @@
         Width="500" Height="500">
         <StackPanel HorizontalAlignment="Center" Margin="20">
                 <TextBox x:Name="TheFortune" 
-                Text="="
+                Text=""
                 IsReadOnly="True"
                 TextAlignment="Center"
                 ></TextBox>
                 <Button
                 x:Name="GetFortune"
                 Click="FortuneGet_Click"
-                ></Button>
+                Height="50"
+                Width="100"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                >Get Fortune</Button>
         </StackPanel>
 </Window>
