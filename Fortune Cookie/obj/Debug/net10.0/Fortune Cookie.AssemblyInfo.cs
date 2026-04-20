@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Fortune Cookie")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+874813de65e9d55f4e780db78de51957dbf43106")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e5c463e9bbf487cbfbc348d2a14fb506fa387778")]
 [assembly: System.Reflection.AssemblyProductAttribute("Fortune Cookie")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Fortune Cookie")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
