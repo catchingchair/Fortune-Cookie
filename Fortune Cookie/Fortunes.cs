@@ -34,7 +34,7 @@ namespace Fortune_Cookie
             // clear list
             fortuneList.Clear();
             // read from the text files that contains the list of fortunes
-            foreach (string line in File.ReadLines("Fortunes.txt"))
+            foreach (string line in File.ReadLines("List/Fortunes.txt"))
             {    
                 fortuneList.Add(line);
             }

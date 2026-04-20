@@ -14,7 +14,7 @@
                 ></TextBox>
                 <Button
                 x:Name="GetFortune"
-                Click=""
+                Click="FortuneGet_Click"
                 ></Button>
         </StackPanel>
 </Window>
