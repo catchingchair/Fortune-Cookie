@@ -6,5 +6,15 @@
         x:Class="Fortune_Cookie.MainWindow"
         Title="Fortune_Cookie"
         Width="500" Height="500">
-        
+        <StackPanel HorizontalAlignment="Center" Margin="20">
+                <TextBox x:Name="TheFortune" 
+                Text="="
+                IsReadOnly="True"
+                TextAlignment="Center"
+                ></TextBox>
+                <Button
+                x:Name="GetFortune"
+                Click=""
+                ></Button>
+        </StackPanel>
 </Window>
