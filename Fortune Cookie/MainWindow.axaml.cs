@@ -14,7 +14,7 @@ public partial class MainWindow : Window
     public void FortuneGet_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
         // get a random fortune and set the text to it
-       // FortuneText.Text = Fortunes.getRandomFortune();
+        TheFortune.Text = Fortunes.getRandomFortune();
     }
     public void FortuneReset_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
