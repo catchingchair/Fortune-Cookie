@@ -5,13 +5,18 @@ using System.IO;
 
 namespace Fortune_Cookie
 {
-    public class Fortunes
+    public static class Fortunes
     {
-        public List<string> fortuneList = new List<string>{};
+        public static List<string> fortuneList = new List<string>{};
         
-        public string getRandomFortune()
+        public static string getRandomFortune()
         {
-            // input them all into a list 
+            // make sure some pycho path didn't go through every single fortune 
+            if(fortuneList.Count == 0)
+            {
+                ResetFortuneList();
+            }
+            // get a random fortune
             int RandomNum = new Random().Next(0, fortuneList.Count);
             // console check
             Console.WriteLine("checking random fortune.");
@@ -24,7 +29,7 @@ namespace Fortune_Cookie
             
         }
 
-        public void ResetFortuneList()
+        public static void ResetFortuneList()
         {
             // clear list
             fortuneList.Clear();
