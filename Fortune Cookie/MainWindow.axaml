@@ -39,17 +39,31 @@
 
                 
                 </Panel>
-
+                <Grid ColumnDefinitions="100,100"
+                  RowDefinitions="100,100" HorizontalAlignment="Center">
                 <!-- Button That Retrieves the Fortune -->
                 <Button
+                Grid.Row="0" Grid.Column="0"
                 x:Name="GetFortune"
                 Click="FortuneGet_Click"
                 Height="50"
                 Width="100"
                 VerticalAlignment="Center"
                 HorizontalAlignment="Center"
+                
                
-                >Get Fortune</Button>
+                >Next</Button>
+                <Button
+                Grid.Row="0" Grid.Column="1"
+                x:Name="ResetFortune"
+                Click="FortuneReset_Click"
+                Height="50"
+                Width="100"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                
+                >Reshuffle</Button>
 
+                </Grid>
         </StackPanel>
 </Window>
