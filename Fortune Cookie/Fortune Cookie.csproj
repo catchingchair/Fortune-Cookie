@@ -18,5 +18,8 @@
       <PrivateAssets Condition="'$(Configuration)' != 'Debug'">All</PrivateAssets>
     </PackageReference>
     <AvaloniaResource Include="Images\**" />
+    <None Update="List/Fortunes.txt">
+       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 </Project>

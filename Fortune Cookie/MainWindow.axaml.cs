@@ -9,7 +9,7 @@ public partial class MainWindow : Window
     {
         InitializeComponent();
         Fortunes.ResetFortuneList();
-    //    CookieImage.Source = new ImageSource("Images/FortuneCookie.png");
+   
     }
 
     public void FortuneGet_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
