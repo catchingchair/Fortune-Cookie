@@ -4,12 +4,10 @@ namespace Fortune_Cookie;
 
 public partial class MainWindow : Window
 {
-    
+
     public MainWindow()
     {
         InitializeComponent();
-        Fortunes.ResetFortuneList();
-   
     }
 
     public void FortuneGet_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
@@ -21,5 +19,17 @@ public partial class MainWindow : Window
     {
         // reset the fortune list
         Fortunes.ResetFortuneList();
+    }
+
+    public void FortuneStart_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+        // Initialize the fortune list (GetInstance() goes here once Singleton is implemented)
+        Fortunes.ResetFortuneList();
+        TheFortune.Text = Fortunes.getRandomFortune();
+
+        // Start has done its job — hide it and reveal the operational buttons
+        StartFortune.IsVisible = false;
+        GetFortune.IsVisible = true;
+        ResetFortune.IsVisible = true;
     }
 }

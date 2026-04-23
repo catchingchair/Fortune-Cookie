@@ -8,61 +8,74 @@
         Width="750" Height="500"
         Background="#f58585">
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Margin="20" Spacing="-150">
-                
+
                 <!-- Panel holds both Image and Textbox (Panel is NOT StackPanel) -->
-                <Panel 
-                       >
-                <!-- Image -->
-                 <Image x:Name="CookieImage"
-                         Source="Images\FortuneCookie.png"
-                         Height="500"
-                         Width="500"
-                         VerticalAlignment="Center"
-                        >
+                <Panel
+                >
+                        <!-- Image -->
+                        <Image x:Name="CookieImage"
+                               Source="Images\FortuneCookie.png"
+                               Height="500"
+                               Width="500"
+                               VerticalAlignment="Center"
+                               >
                         </Image>
 
-                <!-- Display for the Fortune -->
-                <TextBox x:Name="TheFortune" 
-                Text=""
-                IsReadOnly="True"
-                IsHitTestVisible="False"
-                TextAlignment="Center"
-                Height="500"
-                Width="200"
-                Foreground="#000000"
-                TextWrapping="Wrap"
-                Background="Transparent"
-                BorderBrush="Transparent"
-                VerticalAlignment="Bottom"
-                Padding="0,250,0,0"
-                ></TextBox>
+                        <!-- Display for the Fortune -->
+                        <TextBox x:Name="TheFortune"
+                                 Text=""
+                                 IsReadOnly="True"
+                                 IsHitTestVisible="False"
+                                 TextAlignment="Center"
+                                 Height="500"
+                                 Width="200"
+                                 Foreground="#000000"
+                                 TextWrapping="Wrap"
+                                 Background="Transparent"
+                                 BorderBrush="Transparent"
+                                 VerticalAlignment="Bottom"
+                                 Padding="0,250,0,0"
+                                 ></TextBox>
 
-                
+
                 </Panel>
                 <Grid ColumnDefinitions="100,100"
-                  RowDefinitions="100,100" HorizontalAlignment="Center">
-                <!-- Button That Retrieves the Fortune -->
-                <Button
-                Grid.Row="0" Grid.Column="0"
-                x:Name="GetFortune"
-                Click="FortuneGet_Click"
-                Height="50"
-                Width="100"
-                VerticalAlignment="Center"
-                HorizontalAlignment="Center"
-                
-               
-                >Next</Button>
-                <Button
-                Grid.Row="0" Grid.Column="1"
-                x:Name="ResetFortune"
-                Click="FortuneReset_Click"
-                Height="50"
-                Width="100"
-                VerticalAlignment="Center"
-                HorizontalAlignment="Center"
-                
-                >Reshuffle</Button>
+                      RowDefinitions="100" HorizontalAlignment="Center">
+
+                        <!-- Start Button: visible at launch, hidden after first click -->
+                        <Button
+                        Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+                        x:Name="StartFortune"
+                        Click="FortuneStart_Click"
+                        Height="50"
+                        Width="100"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        >Start</Button>
+
+                        <!-- Next button: hidden until Start is clicked -->
+                        <Button
+                        Grid.Row="0" Grid.Column="0"
+                        x:Name="GetFortune"
+                        Click="FortuneGet_Click"
+                        Height="50"
+                        Width="100"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        IsVisible="False"
+                        >Next</Button>
+
+                        <!-- Reshuffle button: hidden until Start is clicked -->
+                        <Button
+                        Grid.Row="0" Grid.Column="1"
+                        x:Name="ResetFortune"
+                        Click="FortuneReset_Click"
+                        Height="50"
+                        Width="100"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        IsVisible="False"
+                        >Reshuffle</Button>
 
                 </Grid>
         </StackPanel>
